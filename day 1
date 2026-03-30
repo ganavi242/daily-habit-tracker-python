@@ -1,1 +1,30 @@
+#student intoduction program
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+course = input("Enter your course: ")
+college = input("Enter your college name: ")
 
+print("\n--- Student Introduction ---")
+print("Name:", name)
+print("Age:", age)
+print("Course:", course)
+print("College:", college)
+
+#daily water tracker
+name=input ("enter the name:")
+day1=int(input("num of glass consumed:"))
+day2=int(input("num of glass consumed:"))
+day3=int(input("num of glass consumed:"))
+day4=int(input("num of glass consumed:"))
+day5=int(input("num of glass consumed:"))
+day6=int(input("num of glass consumed:"))
+day7=int(input("num of glass consumed:"))
+total=day1+day2+day3+day4+day5+day6+day7
+average=total/7
+print("name:",name)
+print("total glasses consumed:",total)
+print("average glasses per day:",average)
+if average>=7
+   print("good job")
+if average>7
+   print("drink more water")
