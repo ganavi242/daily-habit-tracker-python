@@ -1,7 +1,7 @@
 # daily-habit-tracker-python
-# 50 Days of Python 🐍
+# 50 Days of Python 
 
-Welcome to my **50 Days of Python Challenge**!  
+Welcome to my 50 Days of Python Challenge  
 This repository documents my journey of learning Python through **daily coding practice**, **basic programs**, **mini projects**, and **real-life problem-solving tasks**.
 
 ## 📌 About This Challenge
