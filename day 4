@@ -1,1 +1,16 @@
-
+#attendence checker
+name=input("enter the name:")
+total_classes=int(input("enter the total classes:"))
+attended_classes=int(input("enter the total classes attended:"))
+attendence=(total_classes/attended_classes)*100
+absent_classes=total_classes-attended_classes
+print("/n attendence report")
+print("student name:",name)
+print("total_classes:",total_classes)
+print("attended_classes:",attended_classes)
+print("absent_classes:",absent_classes)
+print("attendence percentage:",attendence,"%")
+if attendence>75
+print("you are allowed for exam")
+else
+print("you are not allowed for exam")
