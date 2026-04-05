@@ -1,1 +1,17 @@
+#grade checker
+student_name=input("enter the name:")
+marks=int(input("enter the marks"))
+total_marks=int(input("enter the total marks"))
+if total_marks>85:
+   print("grade A+")
+elif total_marks>75:
+   print("grade A")
+elif total_marks>65:
+   print("grade B+")
+elif total_marks>55:
+   print("grade B")
+elif total_marks>45:
+   print("grade c")
+else :
+   print("fail")
 
