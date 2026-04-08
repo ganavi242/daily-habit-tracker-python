@@ -1,1 +1,37 @@
+# daily expance tracker
+expences[]
+print("daily expances tracker")
+for i in range[7]
+amount = float(input(f"Enter expense for Day {i+1}: "))
+    expenses.append(amount)
 
+total = sum(expenses)
+average = total / 7
+highest = max(expenses)
+lowest = min(expenses)
+
+print("\n=== Expense Summary ===")
+print("Total Expense:", total)
+print("Average Daily Expense:", average)
+print("Highest Expense:", highest)
+print("Lowest Expense:", lowest)
+
+#shopping bill calculator
+total_bill = 0
+
+print(" Shopping Bill Calculator ")
+
+n = int(input("Enter number of items: "))
+
+for i in range(n):
+    item_name = input(f"\nEnter item {i+1} name: ")
+    quantity = int(input(f"Enter quantity of {item_name}: "))
+    price = float(input(f"Enter price of {item_name}: "))
+
+    item_total = quantity * price
+    total_bill += item_total
+
+    print(f"Total for {item_name} = {item_total}")
+
+print("\n=== Final Bill ===")
+print("Total Shopping Bill =", total_bill)
