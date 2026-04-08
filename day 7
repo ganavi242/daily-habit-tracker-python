@@ -1,1 +1,40 @@
+#calculator
+print("\nChoose operation:")
+print("1. Addition (+)")
+print("2. Subtraction (-)")
+print("3. Multiplication (*)")
+print("4. Division (/)")
 
+choice = input("Enter your choice (1/2/3/4): ")
+
+if choice == '1':
+    print("Result =", num1 + num2)
+elif choice == '2':
+    print("Result =", num1 - num2)
+elif choice == '3':
+    print("Result =", num1 * num2)
+elif choice == '4':
+    if num2 != 0:
+        print("Result =", num1 / num2)
+    else:
+        print("Division by zero is not allowed.")
+else:
+    print("Invalid choice.")
+#BMI calculator
+print(" BMI Calculator ")
+
+weight = float(input("Enter your weight in kg: "))
+height = float(input("Enter your height in meters: "))
+
+bmi = weight / (height ** 2)
+
+print("\nYour BMI is:", bmi)
+
+if bmi < 18.5:
+    print("Category: Underweight")
+elif bmi < 24.9:
+    print("Category: Normal weight")
+elif bmi < 29.9:
+    print("Category: Overweight")
+else:
+    print("Category: Obese")
