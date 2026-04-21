@@ -1,2 +1,18 @@
 #Reverse string
 
+1. Using slicing 
+text = "hello"
+reversed_text = text[::-1]
+print(reversed_text)
+
+2. Using a loop
+text = "hello"
+rev = ""
+for char in text:
+    rev = char + rev
+print(rev)
+
+3. Using reversed() function
+text = "hello"
+rev = "".join(reversed(text))
+print(rev)
