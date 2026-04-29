@@ -1,2 +1,66 @@
-#
-#
+#Palindrome Number Checker
+
+#(A number is palindrome if it reads same forward and backward, like 121)
+
+#include <stdio.h>
+
+int main() {
+    int n, original, reverse = 0, digit;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    original = n;
+
+    while(n != 0) {
+        digit = n % 10;
+        reverse = reverse * 10 + digit;
+        n = n / 10;
+    }
+
+    if(original == reverse)
+        printf("Palindrome Number");
+    else
+        printf("Not a Palindrome Number");
+
+    return 0;
+}
+#Armstrong Number Checker
+
+#(For 3-digit: sum of cubes of digits = number, e.g., 153 → 1³+5³+3³ = 153)
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int n, original, digit, sum = 0, count = 0;
+    int temp;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    original = n;
+    temp = n;
+
+    // count digits
+    while(temp != 0) {
+        count++;
+        temp /= 10;
+    }
+
+    temp = n;
+
+    // calculate Armstrong sum
+    while(temp != 0) {
+        digit = temp % 10;
+        sum += pow(digit, count);
+        temp /= 10;
+    }
+
+    if(sum == original)
+        printf("Armstrong Number");
+    else
+        printf("Not an Armstrong Number");
+
+    return 0;
+}
