@@ -1,4 +1,5 @@
-#prime number in rangestart = 10
+#prime number in range
+start = 10
 end = 50
 
 for num in range(start, end + 1):
