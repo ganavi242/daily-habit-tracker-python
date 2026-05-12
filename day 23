@@ -1,4 +1,5 @@
-#import random
+#number guessing game
+import random
 
 secret = random.randint(1, 10)
 
