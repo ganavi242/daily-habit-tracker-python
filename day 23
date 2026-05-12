@@ -9,3 +9,12 @@ if guess == secret:
 else:
     print("Wrong guess.")
     print("The number was:", secret)
+#Lucky Number Checker
+lucky_number = 7
+
+number = int(input("Enter your lucky number: "))
+
+if number == lucky_number:
+    print("Wow! Your number is lucky.")
+else:
+    print("Not a lucky number.")
