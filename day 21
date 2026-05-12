@@ -1,2 +1,9 @@
-#
+# Electricity Bill Estimator
+
+units = int(input("Enter electricity units used: "))
+
+cost_per_unit = 5
+bill = units * cost_per_unit
+
+print("Total Electricity Bill =", bill)
 #
