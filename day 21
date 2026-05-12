@@ -6,4 +6,12 @@ cost_per_unit = 5
 bill = units * cost_per_unit
 
 print("Total Electricity Bill =", bill)
-#
+# Weekly Water Tracker
+
+total_water = 0
+
+for day in range(1, 8):
+    water = int(input(f"Enter water intake for Day {day} (in liters): "))
+    total_water += water
+
+print("Total water intake for the week =", total_water, "liters")
