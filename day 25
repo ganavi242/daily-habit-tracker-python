@@ -1,1 +1,55 @@
+#Swap Two Numbers
+Method 1: Using Third Variable
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
 
+temp = a
+a = b
+b = temp
+
+print("After swapping:")
+print("a =", a)
+print("b =", b)
+Sample Output
+Enter first number: 10
+Enter second number: 20
+
+#After swapping:
+a = 20
+b = 10
+Method 2: Without Using Third Variable
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+a, b = b, a
+
+print("After swapping:")
+print("a =", a)
+print("b =", b)
+Smallest of Three Numbers
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+smallest = min(a, b, c)
+
+print("Smallest number is:", smallest)
+Sample Output
+Enter first number: 12
+Enter second number: 5
+Enter third number: 9
+
+Smallest number is: 5
+#Alternative Using if-else
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+if a <= b and a <= c:
+    print("Smallest number is:", a)
+
+elif b <= a and b <= c:
+    print("Smallest number is:", b)
+
+else:
+    print("Smallest number is:", c)
