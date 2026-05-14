@@ -1,1 +1,15 @@
+#ch = input("Enter a character: ")
 
+if ch.isalpha():
+    print("Alphabet")
+
+    if ch.isupper():
+        print("Uppercase Letter")
+    else:
+        print("Lowercase Letter")
+
+elif ch.isdigit():
+    print("Digit")
+
+else:
+    print("Special Character")
