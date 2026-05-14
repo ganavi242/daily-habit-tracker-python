@@ -22,3 +22,22 @@ else:
 ch = input("Enter a character: ")
 
 #ASCII Value Finder
+ch = input("Enter a character: ")
+
+# Character Type Check
+if ch.isalpha():
+    print("Alphabet")
+
+    if ch.isupper():
+        print("Uppercase Letter")
+    else:
+        print("Lowercase Letter")
+
+elif ch.isdigit():
+    print("Digit")
+
+else:
+    print("Special Character")
+
+# ASCII Value
+print("ASCII Value:", ord(ch))
